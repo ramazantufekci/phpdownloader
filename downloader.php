@@ -8,15 +8,13 @@ while(!feof($fp))
 	* -o parametresini kullanarak indirilen dosyayı 
 	*istediğiniz isimde kayıt edebilirsiniz.
 	*/
-	//var_export(exec("wget --no-check-certificate ".$url));
-	//exec("curl -o ".$i.".jpg ".$url);
 	exec("wget --no-check-certificate ".$url,$err,$errno);
 	if($errno)
 	{
 		/**
 		*
 		*basename ile url nin sonundaki dosya uzantısını alabiliyoruz.
-		*fakat instagram gibi yerlerde onu dosya uzantısı olarak bitmediği için 
+		*fakat instagram gibi yerlerde sonu dosya uzantısı olarak bitmediği için 
 		*out vermeniz gerekiyor.
 		*/
 		exec("curl -o ".$i.".jpg ".$url);
