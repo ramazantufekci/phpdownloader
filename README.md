@@ -1,2 +1,2 @@
 # Php Downloader
-> Txt dosyasına kayıt edilen linkleri dosyadan okuyarak download eder 
+> Txt dosyasına kayıt edilen linkleri dosyadan okuyarak download eder. 
